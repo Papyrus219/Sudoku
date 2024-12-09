@@ -121,7 +121,10 @@ void Show_board()
 		{
 			for(int j=0;j<3;j++)
 			{
-				cout << board[i][j] << " ";
+				if(board[i][j] == 0)
+					cout << "- ";
+				else
+					cout << board[i][j] << " ";
 			}
 			cout << "| ";
 		}
@@ -132,7 +135,10 @@ void Show_board()
 		{
 			for(int k=3;k<6;k++)
 			{
-				cout << board[i][k] << " ";
+				if(board[i][k] == 0)
+					cout << "- ";
+				else
+					cout << board[i][k] << " ";
 			}
 			cout << "| ";
 		}
@@ -143,7 +149,10 @@ void Show_board()
 		{
 			for(int l=6;l<9;l++)
 			{
-				cout << board[i][l] << " ";
+				if(board[i][l] == 0)
+					cout << "- ";
+				else
+					cout << board[i][l] << " ";
 			}
 			cout << "| ";
 		}
